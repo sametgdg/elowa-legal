@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elowa</title>
+<link rel="stylesheet" href="/elowa-legal/style.css">
+<script>
+var l = (navigator.languages || [navigator.language || "en"]).map(function (x) { return x.slice(0, 2).toLowerCase(); })
+  .filter(function (x) { return ['en', 'tr', 'de'].indexOf(x) >= 0; })[0] || "en";
+location.replace("/elowa-legal/" + l + "/support/");
+</script>
+</head>
+<body><main><h1>Elowa</h1><ul><li><a href="/elowa-legal/en/support/">English</a></li><li><a href="/elowa-legal/tr/support/">Türkçe</a></li><li><a href="/elowa-legal/de/support/">Deutsch</a></li></ul></main></body>
+</html>

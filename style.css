@@ -1,0 +1,51 @@
+/* elowaapp.com · Gece ışığı (0048): renkler docs/product/tasarim-tokens.json'daki anlam adlarıyla, koyu tema. */
+@font-face { font-family: "Figtree"; src: url("fonts/figtree.ttf") format("truetype"); font-weight: 300 900; font-display: swap; }
+@font-face { font-family: "Fraunces"; src: url("fonts/fraunces.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+
+:root {
+  --bg: #0F2226;
+  --surface: #17323A;
+  --line: #2A4A52;
+  --ink: #EEF3F1;
+  --ink-soft: #C9D7D4;
+  --ink-muted: #A3B8B4;
+  --accent-text: #F0A14A;
+  --glow: #FFC27D;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink-soft);
+  font: 17px/1.6 Figtree, system-ui, sans-serif;
+}
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding-top: 28px; padding-bottom: 8px; }
+.brand { font: 400 26px/1.2 Fraunces, Georgia, serif; color: var(--glow); text-decoration: none; }
+.tagline { color: var(--ink-muted); font-size: 15px; }
+.langs { margin-left: auto; font-size: 15px; color: var(--ink-muted); }
+.langs a[aria-current] { color: var(--ink); text-decoration: none; font-weight: 600; }
+
+h1, h2, h3 { color: var(--ink); line-height: 1.25; }
+h1 { font: 400 32px/1.15 Fraunces, Georgia, serif; margin: 32px 0 16px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 6px; }
+strong { color: var(--ink); }
+a { color: var(--accent-text); text-underline-offset: 3px; }
+ul, ol { padding-left: 22px; }
+li { margin: 4px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+code { font-size: 0.9em; }
+mark { background: #F0A14A; color: #1A1206; padding: 0 3px; border-radius: 3px; }
+
+.table { overflow-x: auto; margin: 16px 0; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { color: var(--ink); background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+
+footer { margin-top: 48px; padding-top: 16px; padding-bottom: 40px; border-top: 1px solid var(--line); color: var(--ink-muted); font-size: 14px; }
+footer nav { margin: 8px 0; }

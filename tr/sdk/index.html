@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elowa Ölçüm ve SDK Metni</title>
+<link rel="alternate" hreflang="en" href="/elowa-legal/en/sdk/">
+<link rel="alternate" hreflang="tr" href="/elowa-legal/tr/sdk/">
+<link rel="alternate" hreflang="de" href="/elowa-legal/de/sdk/">
+<link rel="stylesheet" href="/elowa-legal/style.css">
+</head>
+<body>
+<header><a class="brand" href="/elowa-legal/tr/">Elowa</a><span class="tagline">Zor günlerde koçun</span><nav class="langs"><a href="/elowa-legal/en/sdk/">English</a> · <a href="/elowa-legal/tr/sdk/" aria-current="true">Türkçe</a> · <a href="/elowa-legal/de/sdk/">Deutsch</a></nav></header>
+<main>
+<h1>Elowa Ölçüm ve SDK Metni</h1>
+<p>Sürüm 1.0 · Yürürlük: 26 Ekim 2026</p>
+<p>Elowa bir mobil uygulamadır; çerez kullanmaz. Bunun yerine uygulamanın içinde, başka şirketlerin hazırladığı bazı yazılım parçaları (SDK) çalışır. Bu metin hangilerinin çalıştığını, ne topladığını ve senin neye karar verdiğini anlatır. İç kural: <code>docs/kvkk/event-allowlist.md</code>.</p>
+<h2>1. Özet</h2>
+<div class="table"><table><thead><tr>
+<th>SDK</th>
+<th>Ne için</th>
+<th>Ne zaman çalışır</th>
+<th>Kapatabilir misin</th>
+</tr></thead><tbody>
+<tr><td>Google Firebase Analytics</td><td>Uygulamanın nasıl kullanıldığını toplu olarak görmek</td><td><strong>Yalnız</strong> rıza ekranındaki "kullanım ölçümü" kutusunu işaretlersen</td><td>Evet, Profil › Gizlilik › Kullanım ölçümü</td></tr>
+<tr><td>Google Firebase Crashlytics</td><td>Çökmeleri ve hataları düzeltmek</td><td>Kişisel plan için verdiğin ilk iznin ardından</td><td>İlk izni geri çekersen durur</td></tr>
+<tr><td>Firebase Cloud Messaging, Apple Push</td><td>Hatırlatma ve bildirimleri iletmek</td><td>Bildirim iznini verirsen</td><td>Evet, telefonun ayarlarından ya da Profil › Hatırlatmalar</td></tr>
+</tbody></table></div>
+<p>Reklam SDK'sı yok. Reklam kimliği (IDFA, AAID) toplanmaz; bu yüzden iOS'ta "izlemeye izin ver" (ATT) sorusu çıkmaz.</p>
+<h2>2. Ölçüme ne gider, ne gitmez</h2>
+<p><strong>Gidenler:</strong> "uygulama açıldı", "onboarding bitti", "plan oluşturuldu", "planın 5. günü tamamlandı", "abonelik başladı" gibi nötr olaylar; uygulama sürümü, telefon türü, dil, ülke ve Firebase'in ürettiği, sıfırlanabilen bir kurulum kimliği.</p>
+<p><strong>Asla gitmeyenler:</strong> seçtiğin konular (dertler), ruh hâlin, duyguların, yazdığın ya da söylediğin hiçbir şey, Zor an'ı ya da kriz ekranını kullandığın, güvenlik taraması, koç tonu, adın, e-postan, konumun, hesap kimliğin.</p>
+<h2>3. Hukuki sebep ve aktarım</h2>
+<ul>
+<li>Ölçüm: ayrı ve varsayılan kapalı <strong>açık rızan</strong> (KVKK m.5/1, m.6/2; GDPR m.6(1)(a)). Rıza vermemek uygulamanın hiçbir özelliğini kısıtlamaz.
+</li>
+<li>Çökme kayıtları: kişisel planın çalışması için verdiğin açık rızaya bağlı olarak açılır; kayıtlarda yazdıkların ve hassas veriler yer almaz.
+</li>
+<li>Google ABD şirketidir ve Firebase verisi ABD'de işlenebilir. Aktarım KVKK m.9'daki standart sözleşmeye ve GDPR'daki standart sözleşme maddelerine dayanır.
+</li>
+<li>Saklama: ölçüm verisi en çok 14 ay, çökme kayıtları en çok 90 gün.
+</li></ul>
+<h2>4. Kararını değiştirmek</h2>
+<p>Profil › Gizlilik'ten ölçüm iznini istediğin an kapatabilirsin. Kapatınca toplama hemen durur ve bu kurulum kimliğine bağlı ölçüm verilerinin silinmesini Google'dan isteriz.</p>
+</main>
+<footer><p>Elowa bir öz-bakım uygulamasıdır; terapi, tıbbi teşhis ya da tedavinin yerine geçmez. Kendine ya da başkasına zarar verme tehlikesi varsa bulunduğun ülkenin acil numarasını ara.</p><nav><a href="/elowa-legal/tr/privacy/">Gizlilik politikası</a> · <a href="/elowa-legal/tr/terms/">Kullanım şartları</a> · <a href="/elowa-legal/tr/delete/">Verilerini silme</a> · <a href="/elowa-legal/tr/support/">Destek</a></nav><p><a href="mailto:support@elowaapp.com">support@elowaapp.com</a></p></footer>
+</body>
+</html>
